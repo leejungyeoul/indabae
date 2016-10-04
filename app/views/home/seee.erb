@@ -1,0 +1,108 @@
+    <html>
+    
+  <head>
+    <meta charset="utf-8">
+    <title>Landing Zero Free Bootstrap Theme with Video</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles1.css" />
+   
+  </head>
+         <body style="background-color:	#352a2a;">
+          <br><br>
+         </div><a href="/"><font color="white"><div align="center"> < back to home > </back></div></font></a>
+         <br>
+                 <div class="col-lg-2 col-sm-1">
+                 </div>
+                  <div class="col-lg-8 col-sm-8">
+                       
+                       <br>
+                       <br><br><br><br>
+                     <font color=#d3d3d3>
+                                    <table class="table" style="width:100%">
+                            <thead>
+                                <tr>
+                                  <p>
+                                    <th colspan="2" scope="cols" WIDTH="30%">제목</th>
+                                    <th colspan="2" scope="cols" WIDTH="70%"><div align="center"><%= @one_post.title%></div></th>
+                                  </p>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <p class="sansserif">  
+                                    <td WIDTH="10%"><div align="center">작성자</div></td>
+                                    <td WIDTH="10%"><div align="center"><%= @one_post.name1%></div></td>
+                                    <td WIDTH="35%"><div align="right"></div></td>
+                                    <td WIDTH="45%"><div align="center">시간 : <%= @one_post.created_at+32400 %><a href="/destroy/<%=@one_post.id%>">  [삭제]</a><a href="/update_view/<%@one_post.id%>">[수정]</a></div></td>
+                                </p>                           
+                            </tr>
+                                 <tr>
+                                     <td  colspan="4" WIDTH="100%"><div align="center">내용</div></td>
+                                   
+                                </tr>
+                                   <tr>
+                              
+                                     <td colspan="4" WIDTH="100%"><%= @one_post.content%></td>
+                                </tr>
+                              
+                                
+                           
+                            </tbody>
+                        </table>
+                        <br>
+                        <br>
+                  
+                         
+                   </font>
+                </div>   
+                     
+              <div class="col-lg-2 col-sm-1">
+              </div>
+    
+    
+    
+    
+
+
+<style>
+    table.table {
+    /*border-collapse: separate;*/
+    /*border-spacing: 2px;*/
+    /*text-align: center;*/
+    /*table-layout:fixed;*/
+    /*line-height: 1.5;*/
+    /*margin: 20px 10px;*/
+    border: 1px solid #eeefc9;
+}
+table.table th {
+    /*width: 155px;*/
+    /*padding: 10px;*/
+    font-weight: bold;
+    /*vertical-align: center;*/
+    text-align: center;
+    color: #f2f3cc;
+    /*background: #6c3bb9 ;*/
+     border: 1px solid #eeefc9;
+}
+table.table td {
+    /*white-space: nowrap;*/
+     /*text-align: center;*/
+    /*width: 100px;*/
+    /*padding: 2px;*/
+    /*vertical-align: center;*/
+    /*border-bottom: 1px solid #ccc;*/
+    /*background: #eee;*/
+     border: 1px solid #eeefc9;
+}
+
+}
+    
+<!--</style>-->
+
+
+</html>

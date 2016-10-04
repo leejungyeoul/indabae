@@ -1,0 +1,39 @@
+<html>
+    
+  <head>
+    <meta charset="utf-8">
+    <!--<title>Landing Zero Free Bootstrap Theme with Video</title>-->
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+   
+  </head>
+<body>
+  
+  
+  
+<div class ="container" style= "margin-top:50px;">
+
+ <h1>받는사람</h1>
+<%=@a1%>
+<h1>메일 제목</h1>
+<%=@a2%>
+<h1>메일내용</h1>
+<%=@a3%>
+<h1>메일내용</h1>
+<%=@a4%>
+<a href='/'>go to home</a>
+  <%@every_mail.each do |p|%>
+      <%= p.name%>
+      <%= p.email%>
+      <%= p.phone%>
+      <%= p.content%>
+    <%end%>
+
+</div>
+</body>
+</html>

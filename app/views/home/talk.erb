@@ -1,0 +1,60 @@
+<html>
+<head>
+    
+  <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <meta charset="utf-8">
+    <title>Landing Zero Free Bootstrap Theme with Video</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    
+    <!--<link rel="stylesheet" href="css/styles.css"/>-->
+    <style>
+  body {background:url('http://www.nikkiwoodsmedia.com/blog/wp-content/uploads/2014/12/NSW_student_group_writing.jpg'); background-repeat:no-repeat; background-size:100%;}
+  .talk_title { background-color: white; color: #78e21b; font-weight: 500; margin-right: 0%; 
+  margin-left:0%; margin-bottom: 0%; margin-top:10px; font-size: 1.7em; width: 30%; height: 40px; border: 1px solid #e0e0e0; 
+  border-radius: 10px; padding: 5px; overflow: hidden; display:inline-block;}
+  .container { width: 50%; margin:10% auto; background:rgba(0,0,0,0.3); width:50%; height:70%; padding:20px; border-radius: 10px; color: white; margin: 10% auto;}
+  label { color: white; margin-top: 10px; }
+  .write_btn { 
+    width: 75px; height: 35px; background-color: #69ca1b; box-shadow:none; border-radius: 5px; border: none; float:right;
+    margin-top: 1.1%; padding:5px; line-height:2.5; text-align:center; padding: 0px; color: white;
+}
+.write_btn a { width: 75px; height: 35px; color:white; }
+.write_btn a:hover { color: green; text-decoration: none; }
+
+</style>
+</head>
+<body>
+   
+    
+<div class ="container">
+<h1 class="talk_title"><img class="title_icon" src="http://image.flaticon.com/icons/svg/148/148926.svg"></img>글쓰기<span class="small_title">Write</span></h1>
+<span class="write_btn"><a href="/talk_list">목록</a></span>
+    <form action="/talk_write" method="post">
+      <div class="form-group">
+        <label for="exampleInputEmail1">제목</label>
+        <input type="text" name="title" class="form-control" id="exampleInputEmail1" placeholder="제목">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">작성자</label>
+        <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="홍길동">
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleInputEmail1">비밀번호</label>
+        <input type="text" name="pass" class="form-control" id="exampleInputEmail1" placeholder="0000">
+      </div>
+      
+        <label for="exampleInputEmail1">내용</label>
+              
+       <textarea class="form-control" name="content" rows="5" id="comment"></textarea>
+      <button type="submit" class="write_btn" style="margin-top:20px; margin-right:0px;">전송</button>
+    </form>
+</div>
+</body>
+</html>

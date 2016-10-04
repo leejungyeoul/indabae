@@ -1,0 +1,25 @@
+table.table {
+    /*border-collapse: separate;*/
+    border-spacing: 1px;
+    text-align: center;
+    /*table-layout:fixed;*/
+    line-height: 1.5;
+    margin: 20px 10px;
+}
+table.table th {
+    /*width: 155px;*/
+    /*padding: 10px;*/
+    /*font-weight: bold;*/
+    vertical-align: center;
+    text-align: center;
+    /*color: black;*/
+    /*background: #6c3bb9 ;*/
+}
+table.table td {
+    white-space: nowrap;
+    /*width: 100px;*/
+    /*padding: 2px;*/
+    /*vertical-align: center;*/
+    /*border-bottom: 1px solid #ccc;*/
+    /*background: #eee;*/
+}

@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <meta charset="utf-8">
+    <title>Landing Zero Free Bootstrap Theme with Video</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    
+    
+    <style>
+    
+   /*span.small_title {font-size: 30px; font-size: 0.3rem; }*/
+   
+   talk_container.talk_title {
+    background-color: white;
+    color: #78e21b;
+    font-weight: 500;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-top: 10px;
+    font-size: 1.7em;
+    /*width: 30%;*/
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px;
+    padding: 5px;
+    /*overflow: hidden;*/
+    display: inline-block;
+}
+    </style>
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!--<div class="navbar-header">-->
+            <!--    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">-->
+            <!--        <span class="sr-only">Toggle navigation</span>-->
+            <!--        <span class="icon-bar"></span>-->
+            <!--        <span class="icon-bar"></span>-->
+            <!--        <span class="icon-bar"></span>-->
+            <!--    </button>-->
+            <!--    <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i>INDABAE</a>-->
+            <!--</div>-->
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="/">Home INDABAE</a>
+                    </li>
+                    <!--<li>-->
+                    <!--    <a class="page-scroll" href="#one">Intro</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a class="page-scroll" href="#two">video</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a class="page-scroll" href="#three">Gallery</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a class="page-scroll" href="/talk_list">Bulletin board</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--    <a class="page-scroll" href="#last">Contact</a>-->
+                    <!--</li>-->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+      <div class="talk_container">
+        <h2 class="talk_title"> <img class="title_icon" src="http://image.flaticon.com/icons/svg/176/176663.svg"></img><span class="small_title">게시판 INDABAE Talk</span></h2>
+        <span class="write_btn"><a href="/talk">글쓰기</a></span>
+     
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th style="padding: 1%;">제목</th>
+              <th style="padding: 1%;">이름</th>
+              <th style="padding: 1%;">날짜</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                
+          <% @pictures.each do |p| %>   
+               <% unless p.id.nil? %>
+                 <% if @count < 7 %>
+                     <% @count=@count+1 %>
+                      <td style="padding: 1%;"><a href="/talk_detail/<%=p.id%>"><%= p.title %></a> </td>
+                      <td style="padding: 1%;"><%= p.name %></td>
+                      <td style="padding: 1%;"><%= (p.created_at+32400) %>
+                      <!--<a href="/destroy_talk/<%=p.id%>">글 삭제하기-->
+                      </a></td>
+                    </tr>
+                  <!--<%= p.pass %>-->
+                
+              <% end %>
+                    
+                    <!--<a href="/update_talk/<%=p.id%>"><button type="button" class="btn btn-warning">글 수정하기</button></a>-->
+                <% end %>
+          <% end %>
+          </tbody>
+        </table>
+    
+    
+    <!--<div class="row text-center">-->
+    <!--        <div class="col-lg-12">-->
+    <!--            <ul class="pagination">-->
+    <!--                <li>-->
+    <!--                    <a href="#">&laquo;</a>-->
+    <!--                </li>-->
+    <!--                <li class="active">-->
+    <!--                    <a href="#">1</a>-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    <a href="/talk_list2">2</a>-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    <a href="#">3</a>-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    <a href="#">4</a>-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    <a href="#">5</a>-->
+    <!--                </li>-->
+    <!--                <li>-->
+    <!--                    <a href="#">&raquo;</a>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+  </body>
+  <style>
+      body { background: url('http://m.neamb.com/assets/images/articles/how-to-create-strong-social-bonds-at-school_260x141.jpg'); background-repeat:no-repeat; background-size:100%;}
+      .talk_title { background-color: white; color: #78e21b; font-weight: 500; margin-right: 0%; 
+margin-left:0%; margin-bottom: 0%; margin-top:10px; font-size: 1.7em; width: 30%; height: 40px; border: 1px solid #e0e0e0; 
+border-radius: 10px; padding: 5px; overflow: hidden; display:inline-block;}
+table {margin-top: 5%;}
+      .talk_container { background:rgba(0,0,0,0.3); width:80%; height:50%; padding:20px; border-radius: 10px; color: white; margin: 10% auto;}
+      .talk_container a { color: white; }
+      .talk_container th { color: #78e21b; font-size: 1.2em; }
+      .talk_container td { width: 25%; }
+      </style>
+</html>
