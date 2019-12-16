@@ -1,6 +1,9 @@
 # Development
 AWS Cloud(EC2) , ubuntu , Ruby on rails, sqllite
 
+# 인하대 중앙동아리 인다배소리 홍보 사이트
+동아리 활동 내역, 트위터 크롤링, 게시판 등 운영
+
 Welcome to your Rails project on Cloud9 IDE!
 
 To get started, just do the following:
